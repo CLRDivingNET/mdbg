@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files\microsoft visual studio\2022\enterprise\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="17.0">
+ <Targets>
+  <Target Name="D:\Code\CSharp\shed-master\shed-master\Thirdpart\bin\Debug\mdbgeng.dll">
+   <Modules>
+    <Module Name="mdbgeng.dll">
+     <Namespaces>
+      <Namespace Name="Microsoft.Samples.Debugging.MdbgEngine">
+       <Types>
+        <Type Name="LibraryProvider" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#LoadLibrary(System.String)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2022-11-18 11:00:12Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'LibraryProvider.LoadLibrary(string)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MDbgAppDomainCollection" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Item[System.String]" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_Item(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2022-11-18 11:00:12Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\mdbgeng" File="Appdomain.cs" Line="63">'MDbgAppDomainCollection.this.get(string)' 创建 'MDbgAmbiguousModuleNameException' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MDbgFunctionBreakpoint" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(Microsoft.Samples.Debugging.MdbgEngine.MDbgBreakpointCollection,Microsoft.Samples.Debugging.MdbgEngine.ISequencePointResolver)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2022-11-18 11:00:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\mdbgeng" File="Breakpoint.cs" Line="850">'MDbgFunctionBreakpoint.MDbgFunctionBreakpoint(MDbgBreakpointCollection, ISequencePointResolver)' 包含调用链，该调用链导致调用此类所定义的虚方法。请检查以下调用堆栈，看是否有意外结果: &#xD;&#xA;&#xD;&#xA;MDbgFunctionBreakpoint..ctor(MDbgBreakpointCollection, ISequencePointResolver)&#xD;&#xA;MDbgBreakpoint.Bind():Boolean。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MDbgProcess" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2022-11-18 11:00:12Z" FixCategory="DependsOnFix">
+           <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">在 'MDbgProcess' 上实现 IDisposable，因为它创建下列 IDisposable 类型的成员: 'MDbgModuleCollection', 'ManualResetEvent'。如果以前提供过 'MDbgProcess'，对于现有使用者来说，向此类型添加用于实现 IDisposable 的新成员属于重大更改。</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#AsyncStop()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotLockOnObjectsWithWeakIdentity" Category="Microsoft.Reliability" CheckId="CA2002" Status="Active" Created="2022-11-18 11:00:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="CriticalError" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\mdbgeng" File="Process.cs" Line="1472">'MDbgProcess.AsyncStop()' 锁定类型 'MDbgProcess' 的引用。请使用对具有强标识的对象的锁定替换它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CleanAfterProcessExit()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotLockOnObjectsWithWeakIdentity" Category="Microsoft.Reliability" CheckId="CA2002" Status="Active" Created="2022-11-18 11:00:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="CriticalError" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\mdbgeng" File="Process.cs" Line="2464">'MDbgProcess.CleanAfterProcessExit()' 锁定类型 'MDbgProcess' 的引用。请使用对具有强标识的对象的锁定替换它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#HandleCustomPostCallback(Microsoft.Samples.Debugging.CorDebug.ManagedCallbackType,Microsoft.Samples.Debugging.CorDebug.CorEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotLockOnObjectsWithWeakIdentity" Category="Microsoft.Reliability" CheckId="CA2002" Status="Active" Created="2022-11-18 11:00:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="CriticalError" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\mdbgeng" File="Process.cs" Line="3490">'MDbgProcess.HandleCustomPostCallback(ManagedCallbackType, CorEventArgs)' 锁定类型 'MDbgProcess' 的引用。请使用对具有强标识的对象的锁定替换它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InternalHandleRawMode(Microsoft.Samples.Debugging.CorDebug.ManagedCallbackType,Microsoft.Samples.Debugging.CorDebug.CorEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotLockOnObjectsWithWeakIdentity" Category="Microsoft.Reliability" CheckId="CA2002" Status="Active" Created="2022-11-18 11:00:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="CriticalError" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\mdbgeng" File="Process.cs" Line="2487">'MDbgProcess.InternalHandleRawMode(ManagedCallbackType, CorEventArgs)' 锁定类型 'MDbgProcess' 的引用。请使用对具有强标识的对象的锁定替换它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InternalSignalRuntimeIsStopped(Microsoft.Samples.Debugging.CorDebug.CorThread,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotLockOnObjectsWithWeakIdentity" Category="Microsoft.Reliability" CheckId="CA2002" Status="Active" Created="2022-11-18 11:00:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="CriticalError" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\mdbgeng" File="Process.cs" Line="2395">'MDbgProcess.InternalSignalRuntimeIsStopped(CorThread, object)' 锁定类型 'MDbgProcess' 的引用。请使用对具有强标识的对象的锁定替换它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReallyContinueProcess()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotLockOnObjectsWithWeakIdentity" Category="Microsoft.Reliability" CheckId="CA2002" Status="Active" Created="2022-11-18 11:00:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="CriticalError" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\mdbgeng" File="Process.cs" Line="2297">'MDbgProcess.ReallyContinueProcess()' 锁定类型 'MDbgProcess' 的引用。请使用对具有强标识的对象的锁定替换它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MDbgProcessCollection" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Active" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_Active()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2022-11-18 11:00:12Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\mdbgeng" File="Process.cs" Line="122">'MDbgProcessCollection.Active.get()' 创建 'MDbgNoActiveInstanceException' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MDbgThread" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CurrentFrame" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_CurrentFrame()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2022-11-18 11:00:12Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\mdbgeng" File="Thread.cs" Line="185">'MDbgThread.CurrentFrame.get()' 创建 'MDbgNoCurrentFrameException' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\mdbgeng" File="Thread.cs" Line="189">'MDbgThread.CurrentFrame.get()' 创建 'MDbgNoCurrentFrameException' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\mdbgeng" File="Thread.cs" Line="195">'MDbgThread.CurrentFrame.get()' 创建 'MDbgNoCurrentFrameException' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#Suspended" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_Suspended()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2022-11-18 11:00:12Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\mdbgeng" File="Thread.cs" Line="42">'MDbgThread.Suspended.get()' 创建 'NotImplementedException' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MDbgThreadCollection" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Active" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_Active()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2022-11-18 11:00:12Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\mdbgeng" File="Thread.cs" Line="538">'MDbgThreadCollection.Active.get()' 创建 'MDbgNoActiveInstanceException' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MDbgValue" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Value" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_Value()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2022-11-18 11:00:12Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\mdbgeng" File="Value.cs" Line="331">'MDbgValue.Value.get()' 创建 'NotImplementedException' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214">
+   <Name>不要在构造函数中调用可重写的方法</Name>
+   <Description>不应通过构造函数调用类中定义的虚方法。如果某个派生类已重写该虚方法，则将在调用派生类的构造函数前，调用此派生类重写后的方法。</Description>
+   <Resolution Name="Default">{0} 包含调用链，该调用链导致调用此类所定义的虚方法。请检查以下调用堆栈，看是否有意外结果: {1}。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182331.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="usagerules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotLockOnObjectsWithWeakIdentity" Category="Microsoft.Reliability" CheckId="CA2002">
+   <Name>不要锁定具有弱标识的对象</Name>
+   <Description>不要锁定可能跨 AppDomain 抽取的对象或没有强标识的对象。</Description>
+   <Resolution Name="Default">{0} 锁定类型 {1} 的引用。请使用对具有强标识的对象的锁定替换它。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182290.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalError</MessageLevel>
+   <File Name="reliabilityrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065">
+   <Name>不要在意外的位置引发异常</Name>
+   <Description>不要从意外的位置显式引发异常。用户不希望某些方法(如 Equals 和 GetHashCode)引发异常。因此，对这些方法的调用通常不包装在 try catch 块中。</Description>
+   <Resolution Name="PropertyGetter">{0} 创建 {1} 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb386039.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error, Warning</MessageLevel>
+   <File Name="designrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060">
+   <Name>将 P/Invoke 移动到 NativeMethods 类</Name>
+   <Description>此类型包含具有 DllImport 特性的成员。具有 DllImport 特性的成员应包含在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中。</Description>
+   <Resolution Name="Default">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 {0}。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182161.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="designrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001">
+   <Name>具有可释放字段的类型应该是可释放的</Name>
+   <Description>声明可释放成员的类型也应实现 IDisposable。如果该类型没有任何非托管资源，请不要在其上实现终结器。</Description>
+   <Resolution Name="DependsOnFix">在 {0} 上实现 IDisposable，因为它创建下列 IDisposable 类型的成员: {1}。如果以前提供过 {0}，对于现有使用者来说，向此类型添加用于实现 IDisposable 的新成员属于重大更改。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182172.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="17.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">类别</String>
+  <String Key="Certainty">确定性</String>
+  <String Key="CollapseAll">全部折叠</String>
+  <String Key="CheckId">检查 ID</String>
+  <String Key="Error">错误</String>
+  <String Key="Errors">错误</String>
+  <String Key="ExpandAll">全部展开</String>
+  <String Key="Help">帮助</String>
+  <String Key="Line">行</String>
+  <String Key="Messages">消息</String>
+  <String Key="LocationNotStoredInPdb">[位置未存储在 Pdb 中]</String>
+  <String Key="Project">项目</String>
+  <String Key="Resolution">解析</String>
+  <String Key="Rule">规则</String>
+  <String Key="RuleFile">规则文件</String>
+  <String Key="RuleDescription">规则说明</String>
+  <String Key="Source">源</String>
+  <String Key="Status">状态</String>
+  <String Key="Target">目标</String>
+  <String Key="Warning">警告</String>
+  <String Key="Warnings">警告</String>
+  <String Key="ReportTitle">Code Analysis 报告</String>
+ </Localized>
+</FxCopReport>

@@ -1,0 +1,680 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files\microsoft visual studio\2022\enterprise\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="17.0">
+ <Targets>
+  <Target Name="D:\Code\CSharp\shed-master\shed-master\Thirdpart\bin\Debug\corapi.dll">
+   <Modules>
+    <Module Name="corapi.dll">
+     <Namespaces>
+      <Namespace Name="Microsoft.Samples.Debugging.CorDebug">
+       <Types>
+        <Type Name="CorFrame" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Address" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_Address()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Thread.cs" Line="576">'CorFrame.Address.get()' 创建 'CorException' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#InternalFrameType" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_InternalFrameType()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Thread.cs" Line="561">'CorFrame.InternalFrameType.get()' 创建 'CorException' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CorThread" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#HasUnhandledException" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_HasUnhandledException()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Thread.cs" Line="212">'CorThread.HasUnhandledException.get()' 创建 'Exception' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ManagedCallbackBase" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback.Break(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAppDomain,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugThread)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2656">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback.Break(ICorDebugAppDomain, ICorDebugThread)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback.Breakpoint(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAppDomain,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugThread,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugBreakpoint)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2631">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback.Breakpoint(ICorDebugAppDomain, ICorDebugThread, ICorDebugBreakpoint)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback.BreakpointSetError(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAppDomain,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugThread,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugBreakpoint,System.UInt32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2902">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback.BreakpointSetError(ICorDebugAppDomain, ICorDebugThread, ICorDebugBreakpoint, uint)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback.ControlCTrap(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugProcess)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2858">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback.ControlCTrap(ICorDebugProcess)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback.CreateAppDomain(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugProcess,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAppDomain)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2820">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback.CreateAppDomain(ICorDebugProcess, ICorDebugAppDomain)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback.CreateProcess(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugProcess)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2702">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback.CreateProcess(ICorDebugProcess)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback.CreateThread(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAppDomain,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugThread)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2719">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback.CreateThread(ICorDebugAppDomain, ICorDebugThread)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback.DebuggerError(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugProcess,System.Int32,System.UInt32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2780">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback.DebuggerError(ICorDebugProcess, int, uint)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback.EditAndContinueRemap(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAppDomain,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugThread,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugFunction,System.Int32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2892">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback.EditAndContinueRemap(ICorDebugAppDomain, ICorDebugThread, ICorDebugFunction, int)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback.EvalComplete(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAppDomain,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugThread,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugEval)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2680">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback.EvalComplete(ICorDebugAppDomain, ICorDebugThread, ICorDebugEval)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback.EvalException(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAppDomain,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugThread,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugEval)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2692">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback.EvalException(ICorDebugAppDomain, ICorDebugThread, ICorDebugEval)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback.Exception(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAppDomain,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugThread,System.Int32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2667">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback.Exception(ICorDebugAppDomain, ICorDebugThread, int)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback.ExitAppDomain(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugProcess,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAppDomain)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2830">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback.ExitAppDomain(ICorDebugProcess, ICorDebugAppDomain)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback.ExitProcess(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugProcess)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2710">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback.ExitProcess(ICorDebugProcess)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback.ExitThread(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAppDomain,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugThread)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2729">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback.ExitThread(ICorDebugAppDomain, ICorDebugThread)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback.LoadAssembly(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAppDomain,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAssembly)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2840">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback.LoadAssembly(ICorDebugAppDomain, ICorDebugAssembly)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback.LoadClass(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAppDomain,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugClass)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2759">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback.LoadClass(ICorDebugAppDomain, ICorDebugClass)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback.LoadModule(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAppDomain,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugModule)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2739">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback.LoadModule(ICorDebugAppDomain, ICorDebugModule)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback.LogMessage(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAppDomain,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugThread,System.Int32,System.String,System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2794">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback.LogMessage(ICorDebugAppDomain, ICorDebugThread, int, string, string)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback.LogSwitch(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAppDomain,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugThread,System.Int32,System.UInt32,System.String,System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2809">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback.LogSwitch(ICorDebugAppDomain, ICorDebugThread, int, uint, string, string)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback.NameChange(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAppDomain,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugThread)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2867">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback.NameChange(ICorDebugAppDomain, ICorDebugThread)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback.StepComplete(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAppDomain,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugThread,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugStepper,Microsoft.Samples.Debugging.CorDebug.NativeApi.CorDebugStepReason)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2644">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback.StepComplete(ICorDebugAppDomain, ICorDebugThread, ICorDebugStepper, CorDebugStepReason)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback.UnloadAssembly(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAppDomain,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAssembly)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2850">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback.UnloadAssembly(ICorDebugAppDomain, ICorDebugAssembly)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback.UnloadClass(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAppDomain,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugClass)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2769">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback.UnloadClass(ICorDebugAppDomain, ICorDebugClass)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback.UnloadModule(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAppDomain,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugModule)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2749">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback.UnloadModule(ICorDebugAppDomain, ICorDebugModule)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback.UpdateModuleSymbols(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAppDomain,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugModule,System.Runtime.InteropServices.ComTypes.IStream)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2879">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback.UpdateModuleSymbols(ICorDebugAppDomain, ICorDebugModule, IStream)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback2.ChangeConnection(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugProcess,System.UInt32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2943">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback2.ChangeConnection(ICorDebugProcess, uint)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback2.CreateConnection(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugProcess,System.UInt32,System.UInt16&amp;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2938">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback2.CreateConnection(ICorDebugProcess, uint, ref ushort)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback2.DestroyConnection(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugProcess,System.UInt32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2948">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback2.DestroyConnection(ICorDebugProcess, uint)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback2.Exception(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAppDomain,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugThread,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugFrame,System.UInt32,Microsoft.Samples.Debugging.CorDebug.NativeApi.CorDebugExceptionCallbackType,System.UInt32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2955">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback2.Exception(ICorDebugAppDomain, ICorDebugThread, ICorDebugFrame, uint, CorDebugExceptionCallbackType, uint)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback2.ExceptionUnwind(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAppDomain,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugThread,Microsoft.Samples.Debugging.CorDebug.NativeApi.CorDebugExceptionUnwindCallbackType,System.UInt32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2968">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback2.ExceptionUnwind(ICorDebugAppDomain, ICorDebugThread, CorDebugExceptionUnwindCallbackType, uint)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback2.FunctionRemapComplete(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAppDomain,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugThread,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugFunction)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2929">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback2.FunctionRemapComplete(ICorDebugAppDomain, ICorDebugThread, ICorDebugFunction)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback2.FunctionRemapOpportunity(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAppDomain,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugThread,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugFunction,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugFunction,System.UInt32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2916">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback2.FunctionRemapOpportunity(ICorDebugAppDomain, ICorDebugThread, ICorDebugFunction, ICorDebugFunction, uint)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback2.MDANotification(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugController,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugThread,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugMDA)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="3006">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback2.MDANotification(ICorDebugController, ICorDebugThread, ICorDebugMDA)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugManagedCallback3.CustomNotification(Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugThread,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebugAppDomain)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="Debugger.cs" Line="2979">将 'ManagedCallbackBase' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ICorDebugManagedCallback3.CustomNotification(ICorDebugThread, ICorDebugAppDomain)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ModuleRVAReader" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Microsoft.Samples.Debugging.CorSymbolStore.IDiaReadExeAtRVACallback.ReadExecutableAtRVA(System.UInt32,System.UInt32,System.UInt32&amp;,System.Byte[])" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="ModuleRVAReader.cs" Line="48">将 'ModuleRVAReader' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'IDiaReadExeAtRVACallback.ReadExecutableAtRVA(uint, uint, ref uint, byte[])' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="NativeMethods" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CloseHandle(System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.CloseHandle(IntPtr)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLRCreateInstance(System.Guid&amp;,System.Guid&amp;,System.Object&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.CLRCreateInstance(ref Guid, ref Guid, out object)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CoCreateInstance(System.Guid&amp;,System.IntPtr,System.Int32,System.Guid&amp;,Microsoft.Samples.Debugging.CorDebug.NativeApi.ICorDebug&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.CoCreateInstance(ref Guid, IntPtr, int, ref Guid, out ICorDebug)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateDebuggingInterfaceFromVersion(System.Int32,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.CreateDebuggingInterfaceFromVersion(int, string)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetRequestedRuntimeVersion(System.String,System.Text.StringBuilder,System.Int32,System.Int32&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.GetRequestedRuntimeVersion(string, StringBuilder, int, out int)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetVersionFromProcess(Microsoft.Samples.Debugging.CorDebug.ProcessSafeHandle,System.Text.StringBuilder,System.Int32,System.Int32&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.GetVersionFromProcess(ProcessSafeHandle, StringBuilder, int, out int)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OpenProcess(System.Int32,System.Boolean,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.OpenProcess(int, bool, int)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#QueryFullProcessImageName(Microsoft.Samples.Debugging.CorDebug.ProcessSafeHandle,System.Int32,System.Text.StringBuilder,System.Int32&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.QueryFullProcessImageName(ProcessSafeHandle, int, StringBuilder, ref int)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SHCreateStreamOnFile(System.String,Microsoft.Samples.Debugging.CorDebug.NativeMethods+Stgm,System.Runtime.InteropServices.ComTypes.IStream&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.SHCreateStreamOnFile(string, NativeMethods.Stgm, out IStream)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'file' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SHCreateStreamOnFileEx(System.String,Microsoft.Samples.Debugging.CorDebug.NativeMethods+Stgm,System.Int32,System.Boolean,System.IntPtr,System.Runtime.InteropServices.ComTypes.IStream&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.SHCreateStreamOnFileEx(string, NativeMethods.Stgm, int, bool, IntPtr, out IStream)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Microsoft.Samples.Debugging.CorDebug.Utility">
+       <Types>
+        <Type Name="UnmanagedLibraryLeak+NativeMethods" Kind="Class" Accessibility="Private" ExternallyVisible="False">
+         <Members>
+          <Member Name="#GetProcAddress(Microsoft.Samples.Debugging.CorDebug.Utility.UnmanagedLibraryLeak+SafeLibraryHandle,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'procname' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Microsoft.Samples.Debugging.CorMetadata">
+       <Types>
+        <Type Name="MetadataFieldInfo" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#DeclaringType" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_DeclaringType()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="MetadataFieldInfo.cs" Line="208">'MetadataFieldInfo.DeclaringType.get()' 创建 'NotImplementedException' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#FieldHandle" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_FieldHandle()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="MetadataFieldInfo.cs" Line="176">'MetadataFieldInfo.FieldHandle.get()' 创建 'NotImplementedException' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#FieldType" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_FieldType()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="MetadataFieldInfo.cs" Line="168">'MetadataFieldInfo.FieldType.get()' 创建 'NotImplementedException' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#MemberType" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_MemberType()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="MetadataFieldInfo.cs" Line="192">'MetadataFieldInfo.MemberType.get()' 创建 'NotImplementedException' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#ReflectedType" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_ReflectedType()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="MetadataFieldInfo.cs" Line="216">'MetadataFieldInfo.ReflectedType.get()' 创建 'NotImplementedException' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MetadataMethodInfo" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#MethodHandle" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_MethodHandle()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="CorMetadata.cs" Line="437">'MetadataMethodInfo.MethodHandle.get()' 创建 'NotImplementedException' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#ReflectedType" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_ReflectedType()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="CorMetadata.cs" Line="396">'MetadataMethodInfo.ReflectedType.get()' 创建 'NotImplementedException' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#ReturnType" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_ReturnType()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="CorMetadata.cs" Line="380">'MetadataMethodInfo.ReturnType.get()' 创建 'NotImplementedException' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#ReturnTypeCustomAttributes" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_ReturnTypeCustomAttributes()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="CorMetadata.cs" Line="388">'MetadataMethodInfo.ReturnTypeCustomAttributes.get()' 创建 'NotImplementedException' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MetadataType" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Assembly" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_Assembly()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="MetadataType.cs" Line="251">'MetadataType.Assembly.get()' 创建 'NotImplementedException' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#AssemblyQualifiedName" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_AssemblyQualifiedName()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="MetadataType.cs" Line="219">'MetadataType.AssemblyQualifiedName.get()' 创建 'NotImplementedException' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#BaseType" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_BaseType()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="MetadataType.cs" Line="211">'MetadataType.BaseType.get()' 创建 'NotImplementedException' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#GUID" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_GUID()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="MetadataType.cs" Line="268">'MetadataType.GUID.get()' 创建 'NotImplementedException' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#Module" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_Module()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="MetadataType.cs" Line="259">'MetadataType.Module.get()' 创建 'NotImplementedException' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#Namespace" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_Namespace()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="MetadataType.cs" Line="227">'MetadataType.Namespace.get()' 创建 'NotImplementedException' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#TypeHandle" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_TypeHandle()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="MetadataType.cs" Line="243">'MetadataType.TypeHandle.get()' 创建 'NotImplementedException' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#UnderlyingSystemType" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_UnderlyingSystemType()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2022-11-18 11:00:09Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi" File="MetadataType.cs" Line="198">'MetadataType.UnderlyingSystemType.get()' 创建 'NotImplementedException' 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065">
+   <Name>不要在意外的位置引发异常</Name>
+   <Description>不要从意外的位置显式引发异常。用户不希望某些方法(如 Equals 和 GetHashCode)引发异常。因此，对这些方法的调用通常不包装在 try catch 块中。</Description>
+   <Resolution Name="PropertyGetter">{0} 创建 {1} 类型的异常，该异常类型不应当在属性中引发。如果有可能会引发此异常实例，请使用其他异常类型，将该属性转换为方法，或者更改该属性的逻辑，使它不再引发异常。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb386039.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error, Warning</MessageLevel>
+   <File Name="designrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033">
+   <Name>接口方法应可由子类型调用</Name>
+   <Description>定义的显式方法实现具有私有可访问性。除非基类提供了具有相应可访问性的备用方法，否则从具有显式方法实现的类派生，并选择在类中重新声明它们的类不能调入基类实现。如果重写的基类方法已被显式接口实现所隐藏，则为了调入基类实现，派生类必须将基指针强制转换为相关接口。但是，通过此引用调用基类实现时，实际调用的将是派生类实现，这会导致递归调用，并最终导致堆栈溢出。</Description>
+   <Resolution Name="Default">将 {0} 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 {1} 的功能且对派生类可见的新方法。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182153.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401">
+   <Name>P/Invokes 应该是不可见的</Name>
+   <Description>互操作层不应该是公共的。DllImport 特性不应该应用于可公开访问的成员(公共成员或受保护的成员)。</Description>
+   <Resolution Name="Default">更改 P/Invoke {0} 的可访问性，使它在自己的程序集外部不再是可见的。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182209.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">CriticalError</MessageLevel>
+   <File Name="interoperabilityrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101">
+   <Name>指定对 P/Invoke 字符串参数进行封送处理</Name>
+   <Description>在将字符串封送为 ANSI (在 Win9x 上为 Auto)时，某些字符可能会改变。如果启用了最佳匹配映射，则采用 Unicode 编码时显示样式不同的字符串将封送到相同的 ANSI 字符串，这可能会导致错误的安全决策。禁用最佳匹配映射会降低此风险，因为所有没有等效项的字符都将映射到“?”。另外，请注意，CharSet.Ansi 是所有字符串的默认封送设置；Unicode 封送必须显式指定为 DllImport 或 StructLayout 的 CharSet 设置，或者指定为具有 Unicode (或与系统相关的) UnmanagedType 的 MarshalAs 特性。</Description>
+   <Resolution Name="ParameterImplicitAnsi">为了降低安全风险，请将参数 {0} 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182319.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="17.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">类别</String>
+  <String Key="Certainty">确定性</String>
+  <String Key="CollapseAll">全部折叠</String>
+  <String Key="CheckId">检查 ID</String>
+  <String Key="Error">错误</String>
+  <String Key="Errors">错误</String>
+  <String Key="ExpandAll">全部展开</String>
+  <String Key="Help">帮助</String>
+  <String Key="Line">行</String>
+  <String Key="Messages">消息</String>
+  <String Key="LocationNotStoredInPdb">[位置未存储在 Pdb 中]</String>
+  <String Key="Project">项目</String>
+  <String Key="Resolution">解析</String>
+  <String Key="Rule">规则</String>
+  <String Key="RuleFile">规则文件</String>
+  <String Key="RuleDescription">规则说明</String>
+  <String Key="Source">源</String>
+  <String Key="Status">状态</String>
+  <String Key="Target">目标</String>
+  <String Key="Warning">警告</String>
+  <String Key="Warnings">警告</String>
+  <String Key="ReportTitle">Code Analysis 报告</String>
+ </Localized>
+</FxCopReport>

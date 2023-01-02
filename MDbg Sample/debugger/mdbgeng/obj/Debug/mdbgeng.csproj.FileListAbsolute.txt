@@ -1,0 +1,10 @@
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\bin\Debug\mdbgeng.xml
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\bin\Debug\mdbgeng.dll
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\bin\Debug\mdbgeng.pdb
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\bin\Debug\mdbgeng.dll.CodeAnalysisLog.xml
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\bin\Debug\mdbgeng.dll.lastcodeanalysissucceeded
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\mdbgeng\obj\Debug\mdbgeng.csproj.AssemblyReference.cache
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\mdbgeng\obj\Debug\mdbgeng.csproj.CoreCompileInputs.cache
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\mdbgeng\obj\Debug\mdbgeng.csproj.CopyComplete
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\mdbgeng\obj\Debug\mdbgeng.dll
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\mdbgeng\obj\Debug\mdbgeng.pdb

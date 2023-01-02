@@ -1,0 +1,9 @@
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\bin\Debug\corapi.dll
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\bin\Debug\corapi.pdb
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\bin\Debug\corapi.dll.CodeAnalysisLog.xml
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\bin\Debug\corapi.dll.lastcodeanalysissucceeded
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi\obj\Debug\corapi.csproj.AssemblyReference.cache
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi\obj\Debug\corapi.csproj.CoreCompileInputs.cache
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi\obj\Debug\corapi.csproj.CopyComplete
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi\obj\Debug\corapi.dll
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\corapi\obj\Debug\corapi.pdb

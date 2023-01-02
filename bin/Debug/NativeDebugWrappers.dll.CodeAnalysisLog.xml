@@ -1,0 +1,796 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files\microsoft visual studio\2022\enterprise\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="17.0">
+ <Targets>
+  <Target Name="D:\Code\CSharp\shed-master\shed-master\Thirdpart\bin\Debug\NativeDebugWrappers.dll">
+   <Modules>
+    <Module Name="nativedebugwrappers.dll">
+     <Namespaces>
+      <Namespace Name="Microsoft.Samples.Debugging.Native">
+       <Types>
+        <Type Name="AMD64Context" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Dispose(System.Boolean)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Name="DisposeBoolSignature" Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\NativeDebugWrappers" File="amd64Context.cs" Line="579">确保将 'AMD64Context.Dispose(bool)' 声明为 protected、 virtual 和 unsealed。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ContextAccessor" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Dispose(System.Boolean)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Name="DisposeBoolSignature" Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\NativeDebugWrappers" File="context.cs" Line="178">确保将 'ContextAccessor.Dispose(bool)' 声明为 protected、 virtual 和 unsealed。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CREATE_PROCESS_DEBUG_INFO" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#hFile" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CREATE_PROCESS_DEBUG_INFO.hFile' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#hProcess" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CREATE_PROCESS_DEBUG_INFO.hProcess' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#hThread" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CREATE_PROCESS_DEBUG_INFO.hThread' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lpBaseOfImage" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CREATE_PROCESS_DEBUG_INFO.lpBaseOfImage' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lpImageName" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CREATE_PROCESS_DEBUG_INFO.lpImageName' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lpStartAddress" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CREATE_PROCESS_DEBUG_INFO.lpStartAddress' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lpThreadLocalBase" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CREATE_PROCESS_DEBUG_INFO.lpThreadLocalBase' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CREATE_THREAD_DEBUG_INFO" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#hThread" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CREATE_THREAD_DEBUG_INFO.hThread' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lpStartAddress" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CREATE_THREAD_DEBUG_INFO.lpStartAddress' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lpThreadLocalBase" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CREATE_THREAD_DEBUG_INFO.lpThreadLocalBase' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="DebugEvent32" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="CreateProcess" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'DebugEventUnion' 包含下列不可移植的字段: 'DebugEventUnion.CreateProcess'。</Issue>
+          </Message>
+          <Message Id="CreateThread" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'DebugEventUnion' 包含下列不可移植的字段: 'DebugEventUnion.CreateThread'。</Issue>
+          </Message>
+          <Message Id="Exception" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'DebugEventUnion' 包含下列不可移植的字段: 'DebugEventUnion.Exception'。</Issue>
+          </Message>
+          <Message Id="ExceptionAddress" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'EXCEPTION_RECORD' 包含下列不可移植的字段: 'EXCEPTION_RECORD.ExceptionAddress'。</Issue>
+          </Message>
+          <Message Id="ExceptionInformation0" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'EXCEPTION_RECORD' 包含下列不可移植的字段: 'EXCEPTION_RECORD.ExceptionInformation0'。</Issue>
+          </Message>
+          <Message Id="ExceptionInformation1" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'EXCEPTION_RECORD' 包含下列不可移植的字段: 'EXCEPTION_RECORD.ExceptionInformation1'。</Issue>
+          </Message>
+          <Message Id="ExceptionInformation10" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'EXCEPTION_RECORD' 包含下列不可移植的字段: 'EXCEPTION_RECORD.ExceptionInformation10'。</Issue>
+          </Message>
+          <Message Id="ExceptionInformation11" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'EXCEPTION_RECORD' 包含下列不可移植的字段: 'EXCEPTION_RECORD.ExceptionInformation11'。</Issue>
+          </Message>
+          <Message Id="ExceptionInformation12" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'EXCEPTION_RECORD' 包含下列不可移植的字段: 'EXCEPTION_RECORD.ExceptionInformation12'。</Issue>
+          </Message>
+          <Message Id="ExceptionInformation13" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'EXCEPTION_RECORD' 包含下列不可移植的字段: 'EXCEPTION_RECORD.ExceptionInformation13'。</Issue>
+          </Message>
+          <Message Id="ExceptionInformation14" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'EXCEPTION_RECORD' 包含下列不可移植的字段: 'EXCEPTION_RECORD.ExceptionInformation14'。</Issue>
+          </Message>
+          <Message Id="ExceptionInformation2" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'EXCEPTION_RECORD' 包含下列不可移植的字段: 'EXCEPTION_RECORD.ExceptionInformation2'。</Issue>
+          </Message>
+          <Message Id="ExceptionInformation3" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'EXCEPTION_RECORD' 包含下列不可移植的字段: 'EXCEPTION_RECORD.ExceptionInformation3'。</Issue>
+          </Message>
+          <Message Id="ExceptionInformation4" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'EXCEPTION_RECORD' 包含下列不可移植的字段: 'EXCEPTION_RECORD.ExceptionInformation4'。</Issue>
+          </Message>
+          <Message Id="ExceptionInformation5" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'EXCEPTION_RECORD' 包含下列不可移植的字段: 'EXCEPTION_RECORD.ExceptionInformation5'。</Issue>
+          </Message>
+          <Message Id="ExceptionInformation6" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'EXCEPTION_RECORD' 包含下列不可移植的字段: 'EXCEPTION_RECORD.ExceptionInformation6'。</Issue>
+          </Message>
+          <Message Id="ExceptionInformation7" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'EXCEPTION_RECORD' 包含下列不可移植的字段: 'EXCEPTION_RECORD.ExceptionInformation7'。</Issue>
+          </Message>
+          <Message Id="ExceptionInformation8" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'EXCEPTION_RECORD' 包含下列不可移植的字段: 'EXCEPTION_RECORD.ExceptionInformation8'。</Issue>
+          </Message>
+          <Message Id="ExceptionInformation9" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'EXCEPTION_RECORD' 包含下列不可移植的字段: 'EXCEPTION_RECORD.ExceptionInformation9'。</Issue>
+          </Message>
+          <Message Id="ExceptionRecord" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'EXCEPTION_DEBUG_INFO' 包含下列不可移植的字段: 'EXCEPTION_DEBUG_INFO.ExceptionRecord'。</Issue>
+           <Issue Certainty="95" Level="CriticalError">结构 'EXCEPTION_RECORD' 包含下列不可移植的字段: 'EXCEPTION_RECORD.ExceptionRecord'。</Issue>
+          </Message>
+          <Message Id="LoadDll" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'DebugEventUnion' 包含下列不可移植的字段: 'DebugEventUnion.LoadDll'。</Issue>
+          </Message>
+          <Message Id="OutputDebugString" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'DebugEventUnion' 包含下列不可移植的字段: 'DebugEventUnion.OutputDebugString'。</Issue>
+          </Message>
+          <Message Id="hFile" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'CREATE_PROCESS_DEBUG_INFO' 包含下列不可移植的字段: 'CREATE_PROCESS_DEBUG_INFO.hFile'。</Issue>
+           <Issue Certainty="95" Level="CriticalError">结构 'LOAD_DLL_DEBUG_INFO' 包含下列不可移植的字段: 'LOAD_DLL_DEBUG_INFO.hFile'。</Issue>
+          </Message>
+          <Message Id="hProcess" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'CREATE_PROCESS_DEBUG_INFO' 包含下列不可移植的字段: 'CREATE_PROCESS_DEBUG_INFO.hProcess'。</Issue>
+          </Message>
+          <Message Id="hThread" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'CREATE_PROCESS_DEBUG_INFO' 包含下列不可移植的字段: 'CREATE_PROCESS_DEBUG_INFO.hThread'。</Issue>
+           <Issue Certainty="95" Level="CriticalError">结构 'CREATE_THREAD_DEBUG_INFO' 包含下列不可移植的字段: 'CREATE_THREAD_DEBUG_INFO.hThread'。</Issue>
+          </Message>
+          <Message Id="lpBaseOfDll" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'LOAD_DLL_DEBUG_INFO' 包含下列不可移植的字段: 'LOAD_DLL_DEBUG_INFO.lpBaseOfDll'。</Issue>
+           <Issue Certainty="95" Level="CriticalError">结构 'UNLOAD_DLL_DEBUG_INFO' 包含下列不可移植的字段: 'UNLOAD_DLL_DEBUG_INFO.lpBaseOfDll'。</Issue>
+          </Message>
+          <Message Id="lpBaseOfImage" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'CREATE_PROCESS_DEBUG_INFO' 包含下列不可移植的字段: 'CREATE_PROCESS_DEBUG_INFO.lpBaseOfImage'。</Issue>
+          </Message>
+          <Message Id="lpDebugStringData" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'OUTPUT_DEBUG_STRING_INFO' 包含下列不可移植的字段: 'OUTPUT_DEBUG_STRING_INFO.lpDebugStringData'。</Issue>
+          </Message>
+          <Message Id="lpImageName" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'CREATE_PROCESS_DEBUG_INFO' 包含下列不可移植的字段: 'CREATE_PROCESS_DEBUG_INFO.lpImageName'。</Issue>
+           <Issue Certainty="95" Level="CriticalError">结构 'LOAD_DLL_DEBUG_INFO' 包含下列不可移植的字段: 'LOAD_DLL_DEBUG_INFO.lpImageName'。</Issue>
+          </Message>
+          <Message Id="lpStartAddress" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'CREATE_PROCESS_DEBUG_INFO' 包含下列不可移植的字段: 'CREATE_PROCESS_DEBUG_INFO.lpStartAddress'。</Issue>
+           <Issue Certainty="95" Level="CriticalError">结构 'CREATE_THREAD_DEBUG_INFO' 包含下列不可移植的字段: 'CREATE_THREAD_DEBUG_INFO.lpStartAddress'。</Issue>
+          </Message>
+          <Message Id="lpThreadLocalBase" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'CREATE_PROCESS_DEBUG_INFO' 包含下列不可移植的字段: 'CREATE_PROCESS_DEBUG_INFO.lpThreadLocalBase'。</Issue>
+           <Issue Certainty="95" Level="CriticalError">结构 'CREATE_THREAD_DEBUG_INFO' 包含下列不可移植的字段: 'CREATE_THREAD_DEBUG_INFO.lpThreadLocalBase'。</Issue>
+          </Message>
+          <Message Id="union" TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="CriticalError">结构 'DebugEvent32' 包含下列不可移植的字段: 'DebugEvent32.union'。</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="EXCEPTION_RECORD" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ExceptionAddress" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'EXCEPTION_RECORD.ExceptionAddress' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExceptionInformation0" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'EXCEPTION_RECORD.ExceptionInformation0' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExceptionInformation1" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'EXCEPTION_RECORD.ExceptionInformation1' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExceptionInformation10" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'EXCEPTION_RECORD.ExceptionInformation10' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExceptionInformation11" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'EXCEPTION_RECORD.ExceptionInformation11' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExceptionInformation12" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'EXCEPTION_RECORD.ExceptionInformation12' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExceptionInformation13" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'EXCEPTION_RECORD.ExceptionInformation13' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExceptionInformation14" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'EXCEPTION_RECORD.ExceptionInformation14' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExceptionInformation2" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'EXCEPTION_RECORD.ExceptionInformation2' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExceptionInformation3" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'EXCEPTION_RECORD.ExceptionInformation3' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExceptionInformation4" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'EXCEPTION_RECORD.ExceptionInformation4' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExceptionInformation5" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'EXCEPTION_RECORD.ExceptionInformation5' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExceptionInformation6" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'EXCEPTION_RECORD.ExceptionInformation6' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExceptionInformation7" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'EXCEPTION_RECORD.ExceptionInformation7' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExceptionInformation8" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'EXCEPTION_RECORD.ExceptionInformation8' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExceptionInformation9" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'EXCEPTION_RECORD.ExceptionInformation9' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExceptionRecord" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'EXCEPTION_RECORD.ExceptionRecord' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IA64Context" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Dispose(System.Boolean)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Name="DisposeBoolSignature" Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\NativeDebugWrappers" File="ia64Context.cs" Line="993">确保将 'IA64Context.Dispose(bool)' 声明为 protected、 virtual 和 unsealed。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="LOAD_DLL_DEBUG_INFO" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#hFile" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'LOAD_DLL_DEBUG_INFO.hFile' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lpBaseOfDll" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'LOAD_DLL_DEBUG_INFO.lpBaseOfDll' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lpImageName" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'LOAD_DLL_DEBUG_INFO.lpImageName' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ModuleInfo" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#EntryPoint" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'ModuleInfo.EntryPoint' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lpBaseOfDll" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'ModuleInfo.lpBaseOfDll' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="NativeMethods" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CloseHandle(System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.CloseHandle(IntPtr)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ContinueDebugEvent(System.UInt32,System.UInt32,Microsoft.Samples.Debugging.Native.NativeMethods+ContinueStatus)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.ContinueDebugEvent(uint, uint, NativeMethods.ContinueStatus)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateFileMapping(Microsoft.Win32.SafeHandles.SafeFileHandle,System.IntPtr,Microsoft.Samples.Debugging.Native.NativeMethods+PageProtection,System.UInt32,System.UInt32,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.CreateFileMapping(SafeFileHandle, IntPtr, NativeMethods.PageProtection, uint, uint, string)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+            <Message Id="5" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'lpName' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateProcess(System.String,System.String,System.IntPtr,System.IntPtr,System.Boolean,Microsoft.Samples.Debugging.Native.NativeMethods+CreateProcessFlags,System.IntPtr,System.String,Microsoft.Samples.Debugging.Native.Private.STARTUPINFO,Microsoft.Samples.Debugging.Native.Private.PROCESS_INFORMATION)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.CreateProcess(string, string, IntPtr, IntPtr, bool, NativeMethods.CreateProcessFlags, IntPtr, string, STARTUPINFO, PROCESS_INFORMATION)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+            <Message Id="STARTUPINFO.lpDesktop" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="NonBreaking">
+             <Issue Name="FieldImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将字段 'STARTUPINFO.lpDesktop' 封送为 Unicode，方法是将 'STARTUPINFO' 上的 StructLayout.CharSet 设置为 CharSet.Unicode，或者将该字段显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并使用 BestFitMapping 特性来禁用最佳匹配映射；为了提高安全性，还需启用 ThrowOnUnmappableChar。</Issue>
+            </Message>
+            <Message Id="STARTUPINFO.lpReserved" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="NonBreaking">
+             <Issue Name="FieldImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将字段 'STARTUPINFO.lpReserved' 封送为 Unicode，方法是将 'STARTUPINFO' 上的 StructLayout.CharSet 设置为 CharSet.Unicode，或者将该字段显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并使用 BestFitMapping 特性来禁用最佳匹配映射；为了提高安全性，还需启用 ThrowOnUnmappableChar。</Issue>
+            </Message>
+            <Message Id="STARTUPINFO.lpTitle" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="NonBreaking">
+             <Issue Name="FieldImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将字段 'STARTUPINFO.lpTitle' 封送为 Unicode，方法是将 'STARTUPINFO' 上的 StructLayout.CharSet 设置为 CharSet.Unicode，或者将该字段显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并使用 BestFitMapping 特性来禁用最佳匹配映射；为了提高安全性，还需启用 ThrowOnUnmappableChar。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DebugActiveProcess(System.UInt32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.DebugActiveProcess(uint)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DebugActiveProcessStop(System.UInt32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.DebugActiveProcessStop(uint)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DebugBreakProcess(System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.DebugBreakProcess(IntPtr)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DebugSetProcessKillOnExit(System.Boolean)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.DebugSetProcessKillOnExit(bool)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetCurrentThreadId()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.GetCurrentThreadId()' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetFileSizeEx(System.IntPtr,System.Int64&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.GetFileSizeEx(IntPtr, out long)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetModuleInformation(System.IntPtr,System.IntPtr,Microsoft.Samples.Debugging.Native.ModuleInfo&amp;,System.UInt32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.GetModuleInformation(IntPtr, IntPtr, out ModuleInfo, uint)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetSystemInfo(Microsoft.Samples.Debugging.Native.NativeMethods+SYSTEM_INFO&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.GetSystemInfo(out NativeMethods.SYSTEM_INFO)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetThreadContext(System.IntPtr,System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.GetThreadContext(IntPtr, IntPtr)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#IsWow64Process(Microsoft.Samples.Debugging.Native.SafeWin32Handle,System.Boolean&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.IsWow64Process(SafeWin32Handle, ref bool)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LoadLibraryEx(System.String,System.Int32,Microsoft.Samples.Debugging.Native.NativeMethods+LoadLibraryFlags)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message Id="1" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">如代码中所声明的，P/Invoke 'NativeMethods.LoadLibraryEx(string, int, NativeMethods.LoadLibraryFlags)' 的参数 'hFile' 在 64 位 平台上的字节宽度将为 4。这是不正确的，因为此 API 的实际本机声明表明该参数在 64 位 平台上的字节宽度应为 8。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 'int'。</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'fileName' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MapViewOfFile(Microsoft.Samples.Debugging.Native.SafeWin32Handle,System.UInt32,System.UInt32,System.UInt32,System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.MapViewOfFile(SafeWin32Handle, uint, uint, uint, IntPtr)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OpenProcess(System.Int32,System.Boolean,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.OpenProcess(int, bool, int)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OpenThread(Microsoft.Samples.Debugging.Native.ThreadAccess,System.Boolean,System.UInt32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.OpenThread(ThreadAccess, bool, uint)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReadProcessMemory(System.IntPtr,System.IntPtr,System.Byte[],System.UIntPtr,System.Int32&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.ReadProcessMemory(IntPtr, IntPtr, byte[], UIntPtr, out int)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SetEvent(Microsoft.Samples.Debugging.Native.SafeWin32Handle)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.SetEvent(SafeWin32Handle)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SetThreadContext(System.IntPtr,System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.SetThreadContext(IntPtr, IntPtr)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TerminateProcess(System.IntPtr,System.UInt32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.TerminateProcess(IntPtr, uint)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UnmapViewOfFile(System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.UnmapViewOfFile(IntPtr)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WaitForDebugEvent32(Microsoft.Samples.Debugging.Native.DebugEvent32&amp;,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.WaitForDebugEvent32(ref DebugEvent32, int)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WaitForDebugEvent64(Microsoft.Samples.Debugging.Native.DebugEvent64&amp;,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.WaitForDebugEvent64(ref DebugEvent64, int)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WaitForSingleObject(System.IntPtr,System.UInt32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">更改 P/Invoke 'NativeMethods.WaitForSingleObject(IntPtr, uint)' 的可访问性，使它在自己的程序集外部不再是可见的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="NativeMethods+SYSTEM_INFO" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#dwActiveProcessorMask" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'NativeMethods.SYSTEM_INFO.dwActiveProcessorMask' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lpMaximumApplicationAddress" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'NativeMethods.SYSTEM_INFO.lpMaximumApplicationAddress' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lpMinimumApplicationAddress" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'NativeMethods.SYSTEM_INFO.lpMinimumApplicationAddress' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="OUTPUT_DEBUG_STRING_INFO" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#lpDebugStringData" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'OUTPUT_DEBUG_STRING_INFO.lpDebugStringData' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UNLOAD_DLL_DEBUG_INFO" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#lpBaseOfDll" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'UNLOAD_DLL_DEBUG_INFO.lpBaseOfDll' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="X86Context" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Dispose(System.Boolean)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Name="DisposeBoolSignature" Certainty="95" Level="Error" Path="D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\NativeDebugWrappers" File="x86Context.cs" Line="555">确保将 'X86Context.Dispose(bool)' 声明为 protected、 virtual 和 unsealed。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Microsoft.Samples.Debugging.Native.Private">
+       <Types>
+        <Type Name="PROCESS_INFORMATION" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#hProcess" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'PROCESS_INFORMATION.hProcess' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#hThread" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'PROCESS_INFORMATION.hThread' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="STARTUPINFO" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="DependsOnFix">
+           <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">在 'STARTUPINFO' 上实现 IDisposable，因为它创建下列 IDisposable 类型的成员: 'SafeFileHandle'。如果以前提供过 'STARTUPINFO'，对于现有使用者来说，向此类型添加用于实现 IDisposable 的新成员属于重大更改。</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#lpReserved2" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2022-11-18 11:00:02Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'STARTUPINFO.lpReserved2' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063">
+   <Name>正确实现 IDisposable</Name>
+   <Description>所有 IDisposable 类型都应正确实现释放模式。</Description>
+   <Resolution Name="DisposeBoolSignature">确保将 {0} 声明为 protected、 virtual 和 unsealed。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms244737.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901">
+   <Name>P/Invoke 声明应为可移植声明</Name>
+   <Description>.</Description>
+   <Resolution Name="Parameter">如代码中所声明的，P/Invoke {1} 的参数 {0} 在 {3} 平台上的字节宽度将为 {2}。这是不正确的，因为此 API 的实际本机声明表明该参数在 {3} 平台上的字节宽度应为 {4}。请参考 MSDN Platform SDK 文档来获取帮助，确定应使用哪种数据类型来代替 {5}。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182284(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="portabilityrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401">
+   <Name>P/Invokes 应该是不可见的</Name>
+   <Description>互操作层不应该是公共的。DllImport 特性不应该应用于可公开访问的成员(公共成员或受保护的成员)。</Description>
+   <Resolution Name="Default">更改 P/Invoke {0} 的可访问性，使它在自己的程序集外部不再是可见的。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182209.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">CriticalError</MessageLevel>
+   <File Name="interoperabilityrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111">
+   <Name>指针应为不可见</Name>
+   <Description>应将 IntPtr 和 UIntPtr 字段声明为私有。公开非私有指针可能会导致安全漏洞。</Description>
+   <Resolution Name="Default">将 {0} 设置为私有的。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182306.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalError</MessageLevel>
+   <File Name="securityrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101">
+   <Name>指定对 P/Invoke 字符串参数进行封送处理</Name>
+   <Description>在将字符串封送为 ANSI (在 Win9x 上为 Auto)时，某些字符可能会改变。如果启用了最佳匹配映射，则采用 Unicode 编码时显示样式不同的字符串将封送到相同的 ANSI 字符串，这可能会导致错误的安全决策。禁用最佳匹配映射会降低此风险，因为所有没有等效项的字符都将映射到“?”。另外，请注意，CharSet.Ansi 是所有字符串的默认封送设置；Unicode 封送必须显式指定为 DllImport 或 StructLayout 的 CharSet 设置，或者指定为具有 Unicode (或与系统相关的) UnmanagedType 的 MarshalAs 特性。</Description>
+   <Resolution Name="FieldImplicitAnsi">为了降低安全风险，请将字段 {0} 封送为 Unicode，方法是将 {1} 上的 StructLayout.CharSet 设置为 CharSet.Unicode，或者将该字段显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并使用 BestFitMapping 特性来禁用最佳匹配映射；为了提高安全性，还需启用 ThrowOnUnmappableChar。</Resolution>
+   <Resolution Name="ParameterImplicitAnsi">为了降低安全风险，请将参数 {0} 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182319.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001">
+   <Name>具有可释放字段的类型应该是可释放的</Name>
+   <Description>声明可释放成员的类型也应实现 IDisposable。如果该类型没有任何非托管资源，请不要在其上实现终结器。</Description>
+   <Resolution Name="DependsOnFix">在 {0} 上实现 IDisposable，因为它创建下列 IDisposable 类型的成员: {1}。如果以前提供过 {0}，对于现有使用者来说，向此类型添加用于实现 IDisposable 的新成员属于重大更改。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182172.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="ValueTypeFieldsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1900">
+   <Name>值类型字段应为可移植字段</Name>
+   <Description>具有显式布局的结构若包含未对齐的字段，则会在 64 位平台上造成崩溃。</Description>
+   <Resolution Name="Default">结构 {0} 包含下列不可移植的字段: {1}。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182285(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="portabilityrules.dll" Version="17.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">类别</String>
+  <String Key="Certainty">确定性</String>
+  <String Key="CollapseAll">全部折叠</String>
+  <String Key="CheckId">检查 ID</String>
+  <String Key="Error">错误</String>
+  <String Key="Errors">错误</String>
+  <String Key="ExpandAll">全部展开</String>
+  <String Key="Help">帮助</String>
+  <String Key="Line">行</String>
+  <String Key="Messages">消息</String>
+  <String Key="LocationNotStoredInPdb">[位置未存储在 Pdb 中]</String>
+  <String Key="Project">项目</String>
+  <String Key="Resolution">解析</String>
+  <String Key="Rule">规则</String>
+  <String Key="RuleFile">规则文件</String>
+  <String Key="RuleDescription">规则说明</String>
+  <String Key="Source">源</String>
+  <String Key="Status">状态</String>
+  <String Key="Target">目标</String>
+  <String Key="Warning">警告</String>
+  <String Key="Warnings">警告</String>
+  <String Key="ReportTitle">Code Analysis 报告</String>
+ </Localized>
+</FxCopReport>

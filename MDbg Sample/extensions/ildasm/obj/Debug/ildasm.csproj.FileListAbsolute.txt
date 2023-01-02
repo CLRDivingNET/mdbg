@@ -1,0 +1,2 @@
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\extensions\ildasm\obj\Debug\ildasm.csproj.AssemblyReference.cache
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\extensions\ildasm\obj\Debug\ildasm.csproj.CoreCompileInputs.cache

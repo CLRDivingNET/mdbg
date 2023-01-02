@@ -1,0 +1,9 @@
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\bin\Debug\NativeDebugWrappers.dll
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\bin\Debug\NativeDebugWrappers.pdb
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\bin\Debug\NativeDebugWrappers.XML
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\bin\Debug\NativeDebugWrappers.dll.CodeAnalysisLog.xml
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\bin\Debug\NativeDebugWrappers.dll.lastcodeanalysissucceeded
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\NativeDebugWrappers\obj\Debug\NativeDebugWrappers.csproj.AssemblyReference.cache
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\NativeDebugWrappers\obj\Debug\NativeDebugWrappers.csproj.CoreCompileInputs.cache
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\NativeDebugWrappers\obj\Debug\NativeDebugWrappers.dll
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\NativeDebugWrappers\obj\Debug\NativeDebugWrappers.pdb

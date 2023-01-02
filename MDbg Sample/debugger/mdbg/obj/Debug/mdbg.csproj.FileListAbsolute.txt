@@ -1,0 +1,11 @@
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\bin\Debug\mdbg.exe.config
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\bin\Debug\mdbg.exe
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\bin\Debug\mdbg.pdb
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\bin\Debug\mdbg.exe.CodeAnalysisLog.xml
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\bin\Debug\mdbg.exe.lastcodeanalysissucceeded
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\mdbg\obj\Debug\mdbg.csproj.AssemblyReference.cache
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\mdbg\obj\Debug\mdbg.csproj.SuggestedBindingRedirects.cache
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\mdbg\obj\Debug\mdbg.csproj.CoreCompileInputs.cache
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\mdbg\obj\Debug\mdbg.csproj.CopyComplete
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\mdbg\obj\Debug\mdbg.exe
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\mdbg\obj\Debug\mdbg.pdb

@@ -1,0 +1,9 @@
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\bin\Debug\raw.dll
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\bin\Debug\raw.pdb
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\bin\Debug\raw.dll.CodeAnalysisLog.xml
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\bin\Debug\raw.dll.lastcodeanalysissucceeded
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\raw\obj\Debug\raw.csproj.AssemblyReference.cache
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\raw\obj\Debug\raw.csproj.CoreCompileInputs.cache
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\raw\obj\Debug\raw.csproj.CopyComplete
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\raw\obj\Debug\raw.dll
+D:\Code\CSharp\shed-master\shed-master\Thirdpart\MDbg Sample\debugger\raw\obj\Debug\raw.pdb
